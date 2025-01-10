@@ -1,1 +1,94 @@
-/* LANDING PAGE CSS */
+/* ------------------------------------------ */
+/* COLORS */
+:root {
+    --primary-bg-color: #FDF9F1;
+    --secondary-bg-color: #FFF;
+    --primary-font-color: #222222;
+    --primary-button-color: #D4E377;
+    --accent-color-one: #EF5A30;
+    --accent-color-two: #FEAE33;
+}
+
+/* ------------------------------------------ */
+/* GENERAL STYLES */
+body {
+    margin: 0;
+    font-family: 'inter', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-font-color);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-font-color);
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* TEAM SECTION */
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    width: 250px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* TEAM ROLES & TEAM LINKS */
+.sections-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 40px; 
+}
+
+section {
+    flex: 1 1 45%; 
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    font-family: 'moderat', sans-serif;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: disc; 
+    padding-left: 20px; 
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+    text-align: left; 
+}
+
+a {
+    color: var(--accent-color-one);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color-two);
+}
