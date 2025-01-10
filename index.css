@@ -45,9 +45,10 @@ header {
 }
 
 .team-member img {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 /* TEAM ROLES & TEAM LINKS */
