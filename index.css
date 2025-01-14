@@ -13,12 +13,15 @@
 /* GENERAL STYLES */
 body {
     margin: 0;
-    font-family: 'inter', sans-serif;
+    font-family: 'Moderat', sans-serif;
     background-color: var(--primary-bg-color);
     color: var(--primary-font-color);
 }
 
 header {
+    font-family: 'Tusker Grotesk';
+    font-weight: 500;
+    font-style: normal;
     text-align: center;
     padding: 20px 0;
     background-color: var(--primary-font-color);
@@ -70,7 +73,8 @@ section {
 
 section h2 {
     text-align: center;
-    font-family: 'moderat', sans-serif;
+    font-family: 'Moderat', sans-serif;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
