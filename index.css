@@ -10,26 +10,10 @@
 }
 
 /* ------------------------------------------ */
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Moderat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Moderat', sans-serif;
-}
-
-section h2 {
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    margin-bottom: 20px;
-}
-
-/* ------------------------------------------ */
 /* GENERAL STYLES */
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'inter', sans-serif;
     background-color: var(--primary-bg-color);
     color: var(--primary-font-color);
 }
@@ -41,7 +25,6 @@ header {
     color: white;
 }
 
-/* CONTAINER */
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -50,15 +33,10 @@ header {
 
 /* TEAM SECTION */
 .team-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-}
-
-.team-member:nth-child(4),
-.team-member:nth-child(5) {
-    grid-column: span 2;
 }
 
 .team-member {
@@ -88,6 +66,12 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    font-family: 'moderat', sans-serif;
+    margin-bottom: 20px;
 }
 
 ul {
