@@ -14,8 +14,8 @@
 body {
     margin: 0;
     font-family: 'inter', sans-serif;
-    background-color: var(--secondary-bg-color);
-    color: var(--primary-font-color);
+    background-color: var(--primary-bg-color);
+    color: var(--accent-color-two);
 }
 
 header {
@@ -62,7 +62,7 @@ header {
 
 section {
     flex: 1 1 45%; 
-    background-color: var(--accent-color-two);
+    background-color: var(--secondary-bg-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
