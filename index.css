@@ -14,7 +14,7 @@
 body {
     margin: 0;
     font-family: 'inter', sans-serif;
-    background-color: var(--primary-bg-color);
+    background-color: var(--primary-font-color);
     color: var(--primary-font-color);
 }
 
