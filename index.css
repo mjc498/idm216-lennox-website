@@ -13,7 +13,7 @@
 /* GENERAL STYLES */
 body {
     margin: 0;
-    font-family: 'inter', sans-serif;
+    font-family: 'tusker-grotesk', sans-serif;
     background-color: var(--primary-bg-color);
     color: var(--primary-font-color);
 }
