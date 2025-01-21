@@ -43,7 +43,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px; 
-    justify-content: center;
+    justify-content: center; 
 }
 
 .team-member {
@@ -57,15 +57,22 @@ header {
     object-fit: cover;
 }
 
+.team-section > .team-member:nth-child(4),
+.team-section > .team-member:nth-child(5) {
+    grid-column: span 1;
+    justify-self: center; 
+    align-self: center; 
+}
+
 @media (max-width: 768px) {
     .team-section {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .team-section {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 }
 
