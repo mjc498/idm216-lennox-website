@@ -53,13 +53,13 @@ header {
 
 .row-1 {
     display: flexbox;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly; 
 }
 
 .row-2 {
     display: flexbox;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly; 
 }
 
