@@ -63,7 +63,7 @@ header {
 
 .team-section > .team-member:nth-last-child(2):nth-child(3n+1),
 .team-section > .team-member:last-child:nth-child(3n+1) {
-    grid-column: span 2;
+    grid-column: span 1;
     justify-self: center;
 }
 
