@@ -61,8 +61,10 @@ header {
     object-fit: cover;
 }
 
-.team-section > .team-member:nth-last-child(-n+2):nth-child(3n+1) {
-    grid-column: 2 / span 1;
+.team-section > .team-member:nth-last-child(2):nth-child(3n+1),
+.team-section > .team-member:last-child:nth-child(3n+1) {
+    grid-column: span 2;
+    justify-self: center;
 }
 
 @media (max-width: 768px) {
