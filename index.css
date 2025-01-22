@@ -61,7 +61,6 @@ header {
     display: flex;
     gap: 20px;
     flex-direction: row;
-    justify-content: space-evenly; 
 }
 
 .team-member {
