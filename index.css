@@ -46,6 +46,7 @@ header {
 .team-section {
     display: flex;
     flex-direction: column;
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px; 
     justify-content: space-evenly; 
 }
