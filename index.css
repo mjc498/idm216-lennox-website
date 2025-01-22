@@ -44,23 +44,9 @@ header {
 
 /* TEAM SECTION */
 .team-section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px; 
-    justify-content: space-evenly; 
-}
-
-.row-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
-}
-
-.row-2 {
-    display: flex;
-    gap: 105px;
-    flex-direction: row;
     justify-content: center; 
 }
 
@@ -73,6 +59,13 @@ header {
     height: 250px;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.team-section > .team-member:nth-child(4),
+.team-section > .team-member:nth-child(5) {
+    grid-column: span 1;
+    justify-self: center; 
+    align-self: center; 
 }
 
 @media (max-width: 768px) {
