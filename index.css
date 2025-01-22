@@ -75,12 +75,23 @@ header {
     object-fit: cover;
 }
 
+@media (max-width: 900px) {
+    /* .team-section {
+        grid-template-columns: repeat(2, 1fr); 
+    } */
+    .row-2 {
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+}
+
 @media (max-width: 768px) {
     /* .team-section {
         grid-template-columns: repeat(2, 1fr); 
     } */
     .row-2 {
-        gap: 20px;
+        gap: 0px;
+        justify-content: space-evenly;
     }
 }
 
@@ -90,6 +101,7 @@ header {
     } */
     .row-2 {
         gap: 0px;
+        justify-content: space-evenly;
     }
 }
 
