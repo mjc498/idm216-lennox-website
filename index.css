@@ -44,7 +44,7 @@ header {
 
 /* TEAM SECTION */
 .team-section {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     /*grid-template-columns: repeat(3, 1fr);*/
     gap: 20px; 
@@ -52,13 +52,13 @@ header {
 }
 
 .row-1 {
-    display: flexbox;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly; 
 }
 
 .row-2 {
-    display: flexbox;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly; 
 }
