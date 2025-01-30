@@ -10,22 +10,6 @@
 }
 
 /* ------------------------------------------ */
-/* FONTS */
-@font-face {
-    font-family: 'Tusker Grotesk';
-    src: url('fonts/TuskerGrotesk-5500Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Moderat';
-    src: url('fonts/Moderat-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* ------------------------------------------ */
 /* GENERAL STYLES */
 body {
     margin: 0;
