@@ -11,16 +11,25 @@
 
 /* ------------------------------------------ */
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Moderat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Tusker Grotesk';
+    src: url('fonts/TuskerGrotesk-5500Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Moderat';
+    src: url('fonts/Moderat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ------------------------------------------ */
 /* GENERAL STYLES */
 body {
     margin: 0;
-    font-family: 'Moderat', sans-serif;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Moderat';
     background-color: var(--primary-bg-color);
     color: var(--primary-font-color);
 }
@@ -28,14 +37,14 @@ body {
 header {
     font-family: 'Tusker Grotesk';
     font-weight: 500;
-    font-style: normal;
     text-align: center;
     padding: 20px 0;
     background-color: var(--primary-font-color);
-    color: white;
-    font-family: 'Inter', sans-serif; 
+    color: var(--secondary-bg-color);
 }
 
+/* ------------------------------------------ */
+/* LANDING PAGE */
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -50,7 +59,8 @@ header {
     justify-content: space-evenly; 
 }
 
-.row-1 {
+.row-1,
+.row-2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -58,10 +68,6 @@ header {
 }
 
 .row-2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
     gap: 105px; 
 }
 
@@ -74,38 +80,6 @@ header {
     height: 250px;
     border-radius: 10px;
     object-fit: cover;
-}
-
-/* ------------------------------------------ */
-/* RESPONSIVENESS */
-@media (max-width: 900px) {
-    /* .team-section {
-        grid-template-columns: repeat(2, 1fr); 
-    } */
-    .row-2 {
-        gap: 0px;
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 768px) {
-    /* .team-section {
-        grid-template-columns: repeat(2, 1fr); 
-    } */
-    .row-2 {
-        gap: 0px;
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 600px) {
-    /* .team-section {
-        grid-template-columns: 1fr; 
-    } */
-    .row-2 {
-        gap: 0px;
-        justify-content: space-evenly;
-    }
 }
 
 /* ------------------------------------------ */
@@ -155,6 +129,15 @@ a:hover {
 }
 
 /* ------------------------------------------ */
+/* RESPONSIVENESS */
+@media (max-width: 900px), (max-width: 768px), (max-width: 600px) {
+    .row-2 {
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+}
+
+/* ------------------------------------------ */
 /* ASSETS PAGE */
 .asset {
     display: flex;
@@ -176,7 +159,7 @@ a:hover {
     align-self: center; 
     max-width: 100%;
     border-radius: 12px;
-    border: 4px solid #EF5A30;
+    border: 4px solid var(--accent-color-one);
     margin-top: 10px;
 }
 
@@ -195,59 +178,37 @@ a:hover {
     display: block;
     width: 40%; 
     height: 2px; 
-    background-color: #D4E377; 
+    background-color: var(--primary-button-color); 
     margin: 20px auto; 
     margin-top: 60px;
 }
 
 /* ------------------------------------------ */
-/* RESPONSIVENESS */
-@media (max-width: 1024px) {
-    .asset img {
-        max-width: 500px;
-    }
-
-    .asset:nth-child(1) img {
-        max-width: 400px;
-    }
-
-    .asset:nth-child(2) img, 
-    .asset:nth-child(3) img { 
-        max-width: 500px;
-        height: 400px;
-    }
-
-    .asset:nth-child(4) img { 
-        max-width: 500px;
-        height: 500px;
-    }
-
-    .asset:not(:last-child)::after {
-        width: 60%;
-    }
+/* WIREFRAME CONTAINER */
+.container section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 4px solid var(--accent-color-one);
+    margin-top: 10px;
 }
 
+/* ------------------------------------------ */
+/* RESPONSIVENESS */
 @media (max-width: 760px) {
-    .asset img {
-        max-width: 90%;
-    }
-
     .asset:nth-child(1) img {
-        max-width: 300px;
+        max-width: 400px;
+        height: auto;
+        object-fit: contain;
     }
 
-    .asset:nth-child(2) img, 
-    .asset:nth-child(3) img { 
-        max-width: 90%;
-        height: 300px; 
+    .asset:nth-child(3) img {
+        max-width: 400px;
+        max-height: 350px;
     }
 
-    .asset:nth-child(4) img { 
-        max-width: 90%;
-        height: 400px;
-    }
-
-    .asset:not(:last-child)::after {
-        width: 80%;
+    .asset:nth-child(4) img {
+        max-width: 400px;
+        max-height: 400px;
     }
 }
