@@ -157,6 +157,11 @@ a:hover {
     height: 600px;
 }
 
+.asset:nth-child(6) img {
+    width: 550px; 
+    height: 400px; 
+}
+
 .asset:not(:last-child)::after {
     content: "";
     display: block;
@@ -165,6 +170,20 @@ a:hover {
     background-color: var(--primary-button-color); 
     margin: 20px auto; 
     margin-top: 60px;
+}
+
+.affinity-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
+    gap: 10px; /* Adds spacing between images */
+}
+
+.affinity-images img {
+    width: 600px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px;
+    border: 4px solid var(--accent-color-one);
 }
 
 /* ------------------------------------------ */
@@ -194,5 +213,10 @@ a:hover {
     .asset:nth-child(4) img {
         max-width: 400px;
         max-height: 400px;
+    }
+
+    .asset:nth-child(6) img {
+        max-width: 100%; 
+        height: 300px; 
     }
 }
