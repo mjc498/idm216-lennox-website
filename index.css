@@ -60,8 +60,8 @@ header {
 }
 
 .team-member img {
-    width: 250px;
-    height: 250px;
+    width: 250px !important;
+    height: 250px !important;
     border-radius: 10px;
     object-fit: cover;
 }
