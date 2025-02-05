@@ -119,43 +119,81 @@
 
 <!-- INPUTS SECTION -->
     <h2>Inputs</h2>
-    <div class="login-container">
-        <form action="login.php" method="POST">
-            <label for="email" class="login-text">Email</label>
-            <input type="email" id="email" name="email" placeholder="Type Email Here" required>
+    <section class="inputs-section">
+        <div class="login-container">
+            <form action="login.php" method="POST">
+                <label for="email" class="login-text">Email</label>
+                <input type="email" id="email" name="email" placeholder="Type Email Here" required>
 
-            <label for="password" class="login-text">Password</label>
-            <input type="password" id="password" name="password" placeholder="Type Password Here" required>
-        </form>
-    </div>
+                <label for="password" class="login-text">Password</label>
+                <input type="password" id="password" name="password" placeholder="Type Password Here" required>
+            </form>
+        </div>
+    </section>
 
 <!-- FOOD CARDS -->
     <h2>Food Cards</h2>
-    <div class="order-item">
-        <a href="#">
-            <img src="images/placeholder.png" class="food-image" alt="Food placeholder image">
-        </a>
+    <section class="cards-section">
+        <div class="orders-container scroll-container">
+            <div class="order-item">
+                <img src="images/placeholder.png" alt="Popular item placeholder">
 
-        <div class="add-icon">
-            <img src="icons/add-icon.png" alt="Add item to order">
+                <div class="add-icon">
+                    <img src="icons/add-icon.png" alt="Add item to order">
+                </div>
+
+                <div class="item-info">
+                    <h3>Title</h3>
+                    <p class="price">$</p>
+                </div>
+                <p>Description of item</p>
+            </div>
+
+
+            <div class="order-item">
+                <img src="images/placeholder.png" alt="Popular item placeholder">
+
+                <div class="add-icon">
+                    <img src="icons/add-icon.png" alt="Add item to order">
+                </div>
+
+                <div class="item-info">
+                    <h3>Title</h3>
+                    <p class="price">$</p>
+                </div>
+                <p>Description of item</p>
+            </div>
+
+
+            <div class="order-item">
+                    <img src="images/placeholder.png" alt="Popular item placeholder">
+
+                <div class="add-icon">
+                    <img src="icons/add-icon.png" alt="Add item to order">
+                </div>
+
+                <div class="item-info">
+                    <h3>Title</h3>
+                    <p class="price">$</p>
+                </div>
+                <p>Description of item</p>
+            </div>
         </div>
 
-        <div class="item-info">
-            <h3>Title</h3>
-            <p class="price">$</p>
+        <div class="scroll-indicator">
+            <div class="scroll-fill"></div>
         </div>
-        <p class="last-order">Last ordered on...</p>
-    </div>
+    </section>
 
 <!-- LOGOS -->
-    <h2>Logos</h2>
-    <section class="logos">
-        <img src="images/lennox_white.png" alt="Logo" class="logos-img">
+    <h2>Logo</h2>
+    <section class="logos-section">
+        <img src="images/logos/lennox_black.png" alt="Logo" class="logos-img2">
     </section>
 
 <!-- ICONS -->
     <h2>Icons</h2>
-    <section class="icons">
+    <section class="icons-section">
         <img src="icons/add-icon.png" alt="Icon" class="icon-img">
         <img src="icons/arrow-icon.png" alt="Icon" class="icon-img">
         <img src="icons/cart-icon.png" alt="Icon" class="icon-img">
@@ -169,6 +207,10 @@
         <img src="icons/profile-filled-icon.png" alt="Icon" class="icon-img">
         <img src="icons/profile-icon.png" alt="Icon" class="icon-img">
     </section>
+
+<!-- COMPONENTS -->
+    <h2>Components</h2>
+    <section class="icons">
 
     </div>    
 </body>
