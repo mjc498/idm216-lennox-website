@@ -55,7 +55,6 @@ h2 {
 /* GENERAL SECTION STYLES */
 .colors-section,
 .typography-section,
-.lists-section,
 .buttons-section,
 .inputs-section,
 .cards-section,
@@ -64,7 +63,6 @@ h2 {
     margin-bottom: 80px !important;
 }
 
-.lists-section,
 .buttons-section,
 .inputs-section,
 .cards-section,
@@ -158,19 +156,6 @@ h2 {
 
 @media (max-width: 600px) {
     .typography-section { grid-template-columns: 1fr; }
-}
-
-/* ------------------------------------------ */
-/* LISTS SECTION */
-.lists-section p {
-    font-size: 16px;
-    margin-bottom: 12px;
-}
-
-.lists-section ul,
-.lists-section ol {
-    padding-left: 50px;
-    margin-top: 0;
 }
 
 /* ------------------------------------------ */
